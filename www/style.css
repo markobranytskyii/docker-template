@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Lato', Arial, sans-serif;
+    background: #fdf8f3;
+    color: #2b1b16;
+}
+
+header, footer {
+    background: #8c1d1d;
+    color: #fdf8f3;
+    padding: 24px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    color: #ffffff;
+    letter-spacing: 3px;
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+header p {
+    color: #f3d9d9;
+    margin: 6px 0 0;
+}
+
+footer {
+    margin-top: 40px;
+    color: #f3d9d9;
+    padding: 16px;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #8c1d1d;
+    text-align: center;
+}
+
+.filter-rij {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.zoekfilterbalk {
+    background: #2b1b16;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 8px 20px;
+    margin: 0;
+}
+
+.filter-opties {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px 12px;
+    margin: 0;
+}
+
+.filter-opties label {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.85rem;
+    color: #fdf8f3;
+    cursor: pointer;
+}
+
+.filter-opties input[type="radio"] {
+    accent-color: #e6b800;
+    cursor: pointer;
+}
+
+.films {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.film {
+    background: #ffffff;
+    padding: 15px;
+    width: 250px;
+    border-radius: 8px;
+    border: 1px solid #eaddd3;
+    box-shadow: 0 2px 8px rgba(140, 29, 29, 0.08);
+}
+
+.film img, .detail img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.film h3 {
+    font-family: 'Playfair Display', serif;
+    color: #8c1d1d;
+}
+
+.film p {
+    color: #5a4a42;
+}
+
+.knop {
+    display: inline-block;
+    background: #8c1d1d;
+    color: #ffffff;
+    padding: 10px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.knop:hover {
+    background: #6e1616;
+}
+
+.detail {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #eaddd3;
+    box-shadow: 0 2px 8px rgba(140, 29, 29, 0.08);
+}
+
+.detail.breed {
+    max-width: 900px;
+}
+
+/* Navigatiebalk */
+.navbar {
+    background: #2b1b16;
+    text-align: center;
+    padding: 12px;
+}
+
+.navbar a {
+    color: #fdf8f3;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #e6b800;
+}
+
+/* Tabellen */
+.tabel {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.tabel th, .tabel td {
+    border: 1px solid #eaddd3;
+    padding: 8px 12px;
+    text-align: left;
+    color: #2b1b16;
+}
+
+.tabel th {
+    background: #8c1d1d;
+    color: #ffffff;
+}
+
+.tabel tr:nth-child(even) td {
+    background: #fdf8f3;
+}
+
+.tabel a {
+    color: #8c1d1d;
+    font-weight: bold;
+}
+
+/* Formulieren */
+.detail input, .detail textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #eaddd3;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Lato', Arial, sans-serif;
+}
+
+.zoekfilterbalk input[type="text"] {
+    padding: 6px 10px;
+    border: 1px solid #eaddd3;
+    border-radius: 4px;
+    width: 220px;
+    max-width: 60%;
+}
+
+.zoekfilterbalk .knop {
+    padding: 6px 14px;
+    font-size: 0.9rem;
+}
+
+.fout {
+    color: #c62828;
+    font-weight: bold;
+}
+
+.gelukt {
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+
+
+/* Gerechten */
+.gerechten {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.gerecht {
+    background: #ffffff;
+    padding: 15px;
+    width: 250px;
+    border-radius: 8px;
+    border: 1px solid #eaddd3;
+    box-shadow: 0 2px 8px rgba(140, 29, 29, 0.08);
+}
+
+.gerecht img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.gerecht h3 {
+    font-family: 'Playfair Display', serif;
+    color: #8c1d1d;
+}
+
+.gerecht p {
+    color: #5a4a42;
+}
